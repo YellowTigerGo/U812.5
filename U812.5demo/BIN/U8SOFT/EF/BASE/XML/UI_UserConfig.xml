@@ -1,0 +1,47 @@
+<config>
+<!--dll>
+<userdll>Interface_demo.Cls_UI_interface</userdll>
+<function>
+	<userfunction>Userdll_Init</userfunction>
+	<userfunction>Before_ButtonClick</userfunction>
+	<userfunction>After_ButtonClick</userfunction>
+	<userfunction>Voucher_headBrowUser</userfunction>
+	<userfunction>Voucher_headCellCheck</userfunction>
+	<userfunction>Voucher_bodyBrowUser</userfunction>
+	<userfunction>Voucher_bodyCellCheck</userfunction>
+	<userfunction>Voucher_FillHeadComboBox</userfunction>
+	<userfunction>Voucher_FillList</userfunction>
+	<userfunction>LoadAfter_VoucherData</userfunction>
+	<userfunction>Voucher_DblClick</userfunction>
+	<userfunction>Voucher_Click</userfunction>
+</function>
+</dll-->
+
+
+<dll>
+<userdll>Interface_ccw.Cls_UI_interface</userdll>
+<function>
+	<userfunction>Userdll_Init</userfunction>
+	<userfunction>Before_ButtonClick</userfunction>
+	<userfunction>Voucher_headCellCheck</userfunction>
+	<userfunction>Voucher_bodyCellCheck</userfunction>
+</function>
+</dll>
+
+
+
+<dll>
+<userdll>Interface_fxm.Cls_UI_interface</userdll>
+<function> 
+	<userfunction>Userdll_Init</userfunction>
+	<userfunction>Before_ButtonClick</userfunction>
+	<userfunction>After_ButtonClick</userfunction>
+	<userfunction>Voucher_bodyCellCheck</userfunction>
+	<userfunction>Voucher_headCellCheck</userfunction> 
+	<userfunction>Voucher_headBrowUser</userfunction> 
+	<userfunction>Voucher_bodyBrowUser</userfunction> 	
+</function>
+</dll>
+
+
+</config>

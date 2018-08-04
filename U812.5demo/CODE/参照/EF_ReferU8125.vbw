@@ -1,0 +1,14 @@
+FrmProgress = 0, 0, 0, 0, C, 44, 44, 754, 487, C
+frmVouchRefers = 0, 0, 0, 0, C, 66, 66, 776, 509, C
+SubFrmToolFun = 0, 0, 0, 0, C
+clsReferVoucher = 22, 22, 732, 465, C
+clsEncryption = 0, 0, 0, 0, C
+clsColumnSet = 0, 0, 0, 0, C
+BaseFun = 0, 0, 0, 0, C
+ModToolBar = 0, 0, 0, 0, C
+SDInterFace = 44, 44, 640, 487, 
+Mod = 0, 0, 0, 0, C
+Fun = 66, 66, 662, 509, 
+FrmMsgBox = 0, 0, 0, 0, C, 88, 88, 798, 531, C
+clsVoucherPlugin = 0, 0, 679, 443, C
+ModEncrypt = 0, 0, 0, 0, C

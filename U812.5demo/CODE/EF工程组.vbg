@@ -1,0 +1,13 @@
+VBGROUP 5.0
+Project=主工程\EFMainU8125.vbp
+Project=参照\EF_ReferU8125.vbp
+Project=插件例子代码\Interface_demo\Interface_demo.vbp
+Project=后台服务组件\UF_Public_base\UF_Public_baseU8125.vbp
+Project=后台服务组件\单据列表\EFVoucherListMo.vbp
+Project=后台服务组件\单据业务处理层\EFVoucherMoU8125.vbp
+Project=后台服务组件\单据中心控制台\EFVoucherCo.vbp
+Project=后台服务组件\基础档案\EFClass.vbp
+Project=后台服务组件\审批流\EFWorkFlowSrvU8125.vbp
+StartupProject=门户调试代码\EnterprisePortal.vbp
+Project=BOM生成\EF_BOMCreate.vbp
+Project=插件例子代码\Interface_HL\Interface_HL.vbp

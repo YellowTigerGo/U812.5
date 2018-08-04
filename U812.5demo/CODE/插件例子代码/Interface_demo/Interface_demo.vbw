@@ -1,0 +1,11 @@
+mod = 198, 198, 1005, 619, C
+Cls_MOD_interface = 66, 66, 887, 430, 
+frmRefernew = 22, 22, 732, 465, , 44, 44, 754, 487, C
+Cls_UI_interface = 44, 44, 865, 408, 
+report = 110, 110, 802, 553, C
+frmProgress = 0, 0, 0, 0, C, 132, 132, 793, 575, C
+cls_Show = 176, 176, 837, 619, C
+frmOptions = 154, 154, 815, 597, C, 88, 88, 798, 531, C
+clsVoucherUIPlugin = 132, 132, 794, 575, Z
+clsVoucherAPIPlugin = 176, 176, 767, 619, 
+FrmMsgBox = 110, 110, 800, 553, , 88, 88, 778, 531, C

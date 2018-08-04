@@ -1,0 +1,9 @@
+Frm_voucher = 0, 0, 0, 0, C, 22, 22, 732, 465, C
+clsVoucher_Print = 22, 22, 903, 372, C
+Module1 = 88, 88, 628, 531, C
+cls_log = 22, 22, 562, 465, C
+Encrypt_decrypt = 0, 0, 0, 0, C
+clsSysInfo = 44, 44, 584, 487, C
+clsBom = 66, 66, 606, 509, 
+frmProgress = 154, 154, 779, 597, C, 132, 132, 672, 575, C
+FrmMsgBox = 0, 0, 0, 0, C, 0, 0, 0, 0, C

@@ -1,0 +1,16 @@
+[History]
+B0=Interface_demo/Cls_UI_interface/AddMom_moallocate
+B1=Interface_demo/Cls_UI_interface/DoCreateBom
+B2=Interface_demo/Cls_UI_interface/GetOpComponentId
+B3=Interface_demo/Cls_UI_interface/GetPartId
+B4=Interface_demo/Cls_UI_interface/AddBomComponent
+B5=Interface_demo/Cls_UI_interface/GetSortSeq
+B6=Interface_demo/Cls_UI_interface/CallU8Api4bom
+B7=Interface_demo/Cls_UI_interface/LoadAfter_VoucherData
+B8=Interface_demo/Cls_UI_interface/Insertbas_partFree
+B9=Interface_demo/Cls_UI_interface/InsertInventoryFreeValue
+B10=Interface_demo/Cls_UI_interface/GetInventoryConfigFree
+B11=Interface_demo/Cls_MOD_interface/GetcInvCode
+B12=Interface_demo/Cls_MOD_interface/Before_Save
+B13=Interface_demo/frmRefernew/GetHeadRow
+B14=Interface_demo/Cls_UI_interface/Voucher_headCellCheck

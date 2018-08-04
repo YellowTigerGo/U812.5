@@ -1,0 +1,514 @@
+<xml xmlns:s="uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:rs="urn:schemas-microsoft-com:rowset" xmlns:z="#RowsetSchema" makevoucherruleid="">
+	<s:Schema id="RowsetSchema">
+		<s:ElementType name="row" content="eltOnly" rs:updatable="true">
+			<s:AttributeType name="id" rs:number="1" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="id" rs:keycolumn="true">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true" rs:maybenull="false"/>
+			</s:AttributeType>
+			<s:AttributeType name="ccode" rs:number="2" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="ccode">
+				<s:datatype dt:type="string" dt:maxLength="20"/>
+			</s:AttributeType>
+			<s:AttributeType name="ddate" rs:number="3" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="ddate">
+				<s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="cmaker" rs:number="4" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="cmaker">
+				<s:datatype dt:type="string" dt:maxLength="20"/>
+			</s:AttributeType>
+			<s:AttributeType name="cmakerddate" rs:number="5" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="cmakerddate">
+				<s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="cmodifer" rs:number="6" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="cmodifer">
+				<s:datatype dt:type="string" dt:maxLength="30"/>
+			</s:AttributeType>
+			<s:AttributeType name="cmodiferDate" rs:number="7" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="cmodiferDate">
+				<s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="cverifier" rs:number="8" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="cverifier">
+				<s:datatype dt:type="string" dt:maxLength="20"/>
+			</s:AttributeType>
+			<s:AttributeType name="dverifydate" rs:number="9" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="dverifydate">
+				<s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="ccloser" rs:number="10" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="ccloser">
+				<s:datatype dt:type="string" dt:maxLength="20"/>
+			</s:AttributeType>
+			<s:AttributeType name="dcloserdate" rs:number="11" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="dcloserdate">
+				<s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="vt_id" rs:number="12" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="vt_id">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="ufts" rs:number="13" rs:nullable="true">
+				<s:datatype dt:type="string" rs:dbtype="str" dt:maxLength="30" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="cvouchtype" rs:number="14" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="cvouchtype">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="t_cdepcode" rs:number="15" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="t_cdepcode">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="t_cdepname" rs:number="16" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="Department" rs:basecolumn="cDepName">
+				<s:datatype dt:type="string" dt:maxLength="255"/>
+			</s:AttributeType>
+			<s:AttributeType name="t_cpersoncode" rs:number="17" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="t_cpersoncode">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="t_cpersonname" rs:number="18" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="Person" rs:basecolumn="cPersonName">
+				<s:datatype dt:type="string" dt:maxLength="40"/>
+			</s:AttributeType>
+			<s:AttributeType name="t_ccuscode" rs:number="19" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="t_ccuscode">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="t_ccusname" rs:number="20" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="Customer" rs:basecolumn="cCusName">
+				<s:datatype dt:type="string" dt:maxLength="98"/>
+			</s:AttributeType>
+			<s:AttributeType name="t_cvencode" rs:number="21" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="t_cvencode">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="t_cvenname" rs:number="22" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="Vendor" rs:basecolumn="cVenName">
+				<s:datatype dt:type="string" dt:maxLength="98"/>
+			</s:AttributeType>
+			<s:AttributeType name="t_cwhcode" rs:number="23" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="t_cwhcode">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="t_cwhname" rs:number="24" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="Warehouse" rs:basecolumn="cWhName">
+				<s:datatype dt:type="string" dt:maxLength="20"/>
+			</s:AttributeType>
+			<s:AttributeType name="t_cinvcode" rs:number="25" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="t_cinvcode">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="t_cinvname" rs:number="26" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="inventory" rs:basecolumn="cInvName">
+				<s:datatype dt:type="string" dt:maxLength="255"/>
+			</s:AttributeType>
+			<s:AttributeType name="t_ccode" rs:number="27" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="t_ccode">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="t_ccode_name" rs:number="28" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="code" rs:basecolumn="ccode_name">
+				<s:datatype dt:type="string" dt:maxLength="100"/>
+			</s:AttributeType>
+			<s:AttributeType name="ireturncount" rs:number="29" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="ireturncount">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="iswfcontrolled" rs:number="30" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="iswfcontrolled">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="iverifystate" rs:number="31" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="iverifystate">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="VoucherId" rs:number="32" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="VoucherId">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="VoucherCode" rs:number="33" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="VoucherCode">
+				<s:datatype dt:type="string" dt:maxLength="30"/>
+			</s:AttributeType>
+			<s:AttributeType name="VoucherType" rs:number="34" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="VoucherType">
+				<s:datatype dt:type="string" dt:maxLength="30"/>
+			</s:AttributeType>
+			<s:AttributeType name="define1" rs:number="35" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="define1">
+				<s:datatype dt:type="string" dt:maxLength="20"/>
+			</s:AttributeType>
+			<s:AttributeType name="define2" rs:number="36" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="define2">
+				<s:datatype dt:type="string" dt:maxLength="20"/>
+			</s:AttributeType>
+			<s:AttributeType name="define3" rs:number="37" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="define3">
+				<s:datatype dt:type="string" dt:maxLength="20"/>
+			</s:AttributeType>
+			<s:AttributeType name="define4" rs:number="38" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="define4">
+				<s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="define5" rs:number="39" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="define5">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="define6" rs:number="40" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="define6">
+				<s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="define7" rs:number="41" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="define7">
+				<s:datatype dt:type="float" dt:maxLength="8" rs:precision="15" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="define8" rs:number="42" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="define8">
+				<s:datatype dt:type="string" dt:maxLength="20"/>
+			</s:AttributeType>
+			<s:AttributeType name="define9" rs:number="43" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="define9">
+				<s:datatype dt:type="string" dt:maxLength="20"/>
+			</s:AttributeType>
+			<s:AttributeType name="define10" rs:number="44" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="define10">
+				<s:datatype dt:type="string" dt:maxLength="60"/>
+			</s:AttributeType>
+			<s:AttributeType name="define11" rs:number="45" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="define11">
+				<s:datatype dt:type="string" dt:maxLength="120"/>
+			</s:AttributeType>
+			<s:AttributeType name="define12" rs:number="46" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="define12">
+				<s:datatype dt:type="string" dt:maxLength="120"/>
+			</s:AttributeType>
+			<s:AttributeType name="define13" rs:number="47" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="define13">
+				<s:datatype dt:type="string" dt:maxLength="120"/>
+			</s:AttributeType>
+			<s:AttributeType name="define14" rs:number="48" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="define14">
+				<s:datatype dt:type="string" dt:maxLength="120"/>
+			</s:AttributeType>
+			<s:AttributeType name="define15" rs:number="49" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="define15">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="define16" rs:number="50" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="define16">
+				<s:datatype dt:type="float" dt:maxLength="8" rs:precision="15" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="str1" rs:number="51" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str1">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str2" rs:number="52" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str2">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str3" rs:number="53" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str3">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str4" rs:number="54" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str4">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str5" rs:number="55" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str5">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str6" rs:number="56" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str6">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str7" rs:number="57" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str7">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str8" rs:number="58" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str8">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str9" rs:number="59" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str9">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str10" rs:number="60" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str10">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str11" rs:number="61" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str11">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str12" rs:number="62" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str12">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str13" rs:number="63" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str13">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str14" rs:number="64" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str14">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str15" rs:number="65" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str15">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str16" rs:number="66" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str16">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str17" rs:number="67" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str17">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str18" rs:number="68" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str18">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str19" rs:number="69" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str19">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str20" rs:number="70" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str20">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str21" rs:number="71" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str21">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str22" rs:number="72" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str22">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str23" rs:number="73" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str23">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str24" rs:number="74" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str24">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str25" rs:number="75" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str25">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str26" rs:number="76" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str26">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str27" rs:number="77" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str27">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str28" rs:number="78" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str28">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str29" rs:number="79" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str29">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str30" rs:number="80" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str30">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str31" rs:number="81" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str31">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str32" rs:number="82" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str32">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str33" rs:number="83" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str33">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str34" rs:number="84" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str34">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str35" rs:number="85" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str35">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str36" rs:number="86" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str36">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str37" rs:number="87" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str37">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str38" rs:number="88" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str38">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str39" rs:number="89" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str39">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str40" rs:number="90" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str40">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str41" rs:number="91" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str41">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str42" rs:number="92" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str42">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str43" rs:number="93" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str43">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str44" rs:number="94" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str44">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str45" rs:number="95" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str45">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str46" rs:number="96" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str46">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str47" rs:number="97" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str47">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str48" rs:number="98" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str48">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str49" rs:number="99" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str49">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str50" rs:number="100" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str50">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str51" rs:number="101" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str51">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str52" rs:number="102" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str52">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str53" rs:number="103" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str53">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str54" rs:number="104" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str54">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str55" rs:number="105" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str55">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str56" rs:number="106" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str56">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str57" rs:number="107" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str57">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str58" rs:number="108" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str58">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str59" rs:number="109" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str59">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str60" rs:number="110" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str60">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str61" rs:number="111" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str61">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str62" rs:number="112" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str62">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str63" rs:number="113" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str63">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str64" rs:number="114" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str64">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str65" rs:number="115" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str65">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str66" rs:number="116" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str66">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str67" rs:number="117" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str67">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str68" rs:number="118" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str68">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str69" rs:number="119" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str69">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="str70" rs:number="120" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str70">
+				<s:datatype dt:type="string" dt:maxLength="200"/>
+			</s:AttributeType>
+			<s:AttributeType name="str71" rs:number="121" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str71">
+				<s:datatype dt:type="string" dt:maxLength="200"/>
+			</s:AttributeType>
+			<s:AttributeType name="str72" rs:number="122" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str72">
+				<s:datatype dt:type="string" dt:maxLength="200"/>
+			</s:AttributeType>
+			<s:AttributeType name="str73" rs:number="123" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str73">
+				<s:datatype dt:type="string" dt:maxLength="200"/>
+			</s:AttributeType>
+			<s:AttributeType name="str74" rs:number="124" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str74">
+				<s:datatype dt:type="string" dt:maxLength="200"/>
+			</s:AttributeType>
+			<s:AttributeType name="str75" rs:number="125" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str75">
+				<s:datatype dt:type="string" dt:maxLength="200"/>
+			</s:AttributeType>
+			<s:AttributeType name="str76" rs:number="126" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str76">
+				<s:datatype dt:type="string" dt:maxLength="200"/>
+			</s:AttributeType>
+			<s:AttributeType name="str77" rs:number="127" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str77">
+				<s:datatype dt:type="string" dt:maxLength="200"/>
+			</s:AttributeType>
+			<s:AttributeType name="str78" rs:number="128" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str78">
+				<s:datatype dt:type="string" dt:maxLength="200"/>
+			</s:AttributeType>
+			<s:AttributeType name="str79" rs:number="129" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str79">
+				<s:datatype dt:type="string" dt:maxLength="200"/>
+			</s:AttributeType>
+			<s:AttributeType name="str80" rs:number="130" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="str80">
+				<s:datatype dt:type="string" dt:maxLength="200"/>
+			</s:AttributeType>
+			<s:AttributeType name="int1" rs:number="131" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="int1">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="int2" rs:number="132" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="int2">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="int3" rs:number="133" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="int3">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="int4" rs:number="134" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="int4">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="int5" rs:number="135" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="int5">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="int6" rs:number="136" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="int6">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="int7" rs:number="137" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="int7">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="int8" rs:number="138" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="int8">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="int9" rs:number="139" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="int9">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="int10" rs:number="140" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="int10">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="float1" rs:number="141" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="float1">
+				<s:datatype dt:type="number" rs:dbtype="numeric" dt:maxLength="19" rs:scale="10" rs:precision="30" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="float2" rs:number="142" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="float2">
+				<s:datatype dt:type="number" rs:dbtype="numeric" dt:maxLength="19" rs:scale="10" rs:precision="30" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="float3" rs:number="143" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="float3">
+				<s:datatype dt:type="number" rs:dbtype="numeric" dt:maxLength="19" rs:scale="10" rs:precision="30" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="float4" rs:number="144" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="float4">
+				<s:datatype dt:type="number" rs:dbtype="numeric" dt:maxLength="19" rs:scale="10" rs:precision="30" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="float5" rs:number="145" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="float5">
+				<s:datatype dt:type="number" rs:dbtype="numeric" dt:maxLength="19" rs:scale="10" rs:precision="30" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="float6" rs:number="146" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="float6">
+				<s:datatype dt:type="number" rs:dbtype="numeric" dt:maxLength="19" rs:scale="10" rs:precision="30" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="float7" rs:number="147" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="float7">
+				<s:datatype dt:type="number" rs:dbtype="numeric" dt:maxLength="19" rs:scale="10" rs:precision="30" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="float8" rs:number="148" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="float8">
+				<s:datatype dt:type="number" rs:dbtype="numeric" dt:maxLength="19" rs:scale="10" rs:precision="30" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="float9" rs:number="149" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="float9">
+				<s:datatype dt:type="number" rs:dbtype="numeric" dt:maxLength="19" rs:scale="10" rs:precision="30" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="float10" rs:number="150" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="float10">
+				<s:datatype dt:type="number" rs:dbtype="numeric" dt:maxLength="19" rs:scale="10" rs:precision="30" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="datetime1" rs:number="151" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="datetime1">
+				<s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="datetime2" rs:number="152" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="datetime2">
+				<s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="datetime3" rs:number="153" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="datetime3">
+				<s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="datetime4" rs:number="154" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="datetime4">
+				<s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="datetime5" rs:number="155" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="datetime5">
+				<s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="datetime6" rs:number="156" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="datetime6">
+				<s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="datetime7" rs:number="157" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="datetime7">
+				<s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="datetime8" rs:number="158" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="datetime8">
+				<s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="datetime9" rs:number="159" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="datetime9">
+				<s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="datetime10" rs:number="160" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="datetime10">
+				<s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="c160" rs:name="ufts" rs:number="161" rs:rowver="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machine" rs:basecolumn="ufts" rs:hidden="true">
+				<s:datatype dt:type="bin.hex" dt:maxLength="8" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="cInvCode" rs:number="162" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="inventory" rs:basecolumn="cInvCode" rs:keycolumn="true" rs:hidden="true">
+				<s:datatype dt:type="string" dt:maxLength="20"/>
+			</s:AttributeType>
+			<s:AttributeType name="pubufts" rs:number="163" rs:rowver="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="inventory" rs:basecolumn="pubufts" rs:hidden="true">
+				<s:datatype dt:type="bin.hex" dt:maxLength="8" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="cDepCode" rs:number="164" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="Department" rs:basecolumn="cDepCode" rs:keycolumn="true" rs:hidden="true">
+				<s:datatype dt:type="string" dt:maxLength="12"/>
+			</s:AttributeType>
+			<s:AttributeType name="c164" rs:name="pubufts" rs:number="165" rs:rowver="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="Department" rs:basecolumn="pubufts" rs:hidden="true">
+				<s:datatype dt:type="bin.hex" dt:maxLength="8" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="cPersonCode" rs:number="166" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="Person" rs:basecolumn="cPersonCode" rs:keycolumn="true" rs:hidden="true">
+				<s:datatype dt:type="string" dt:maxLength="20"/>
+			</s:AttributeType>
+			<s:AttributeType name="c166" rs:name="pubufts" rs:number="167" rs:rowver="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="Person" rs:basecolumn="pubufts" rs:hidden="true">
+				<s:datatype dt:type="bin.hex" dt:maxLength="8" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:extends type="rs:rowbase"/>
+		</s:ElementType>
+	</s:Schema>
+	<rs:data>
+		<z:row id="990000001" ccode="0000000001" ddate="2010-05-31T00:00:00" cmaker="demo" cmakerddate="2010-05-31T00:00:00" vt_id="33435" ufts="                     2250.2305" cvouchtype="YXEF9110" iswfcontrolled="0" iverifystate="0" c160="0000000001575ba1" isumdx="零圆零角零分" isumx="0" zdsumdx="零圆零角零分" zdsum="0" editprop=""/>
+		<单据编号><![CDATA[<?xml version="1.0" standalone="yes"?>
+<单据编号 单据类型="YXEF9110" 编号长度="10" 起用日期="1905-03-13" 允许手工修改="False" 重号自动重取="False" 收发标志流水="False" 流水依据是否按前缀对照码生成="False" 起始值="1" 收发单据类型="0" 流水依据="单据类型 " 流水依据长度="10" cSeed="">
+</单据编号>
+]]></单据编号><voucherattached><![CDATA[<Data AccessoriesChanged='0' Deleted='0' VoucherTypeID='YXEF9110' VoucherID=''/>]]></voucherattached><ischeck>false</ischeck></rs:data>
+</xml>

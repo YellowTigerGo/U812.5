@@ -1,0 +1,595 @@
+<xml xmlns:s="uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:rs="urn:schemas-microsoft-com:rowset" xmlns:z="#RowsetSchema">
+	<s:Schema id="RowsetSchema">
+		<s:ElementType name="row" content="eltOnly" rs:updatable="true">
+			<s:AttributeType name="autoid" rs:number="1" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="autoid" rs:keycolumn="true">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true" rs:maybenull="false"/>
+			</s:AttributeType>
+			<s:AttributeType name="id" rs:number="2" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="id">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true" rs:maybenull="false"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_cdepcode" rs:number="3" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_cdepcode">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_cdepname" rs:number="4" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="Department" rs:basecolumn="cDepName">
+				<s:datatype dt:type="string" dt:maxLength="255"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_cpersoncode" rs:number="5" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_cpersoncode">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_cpersonname" rs:number="6" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="Person" rs:basecolumn="cPersonName">
+				<s:datatype dt:type="string" dt:maxLength="40"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_ccuscode" rs:number="7" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_ccuscode">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_ccusname" rs:number="8" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="Customer" rs:basecolumn="cCusName">
+				<s:datatype dt:type="string" dt:maxLength="98"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_cvencode" rs:number="9" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_cvencode">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_cvenname" rs:number="10" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="Vendor" rs:basecolumn="cVenName">
+				<s:datatype dt:type="string" dt:maxLength="98"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_cwhcode" rs:number="11" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_cwhcode">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_cwhname" rs:number="12" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="Warehouse" rs:basecolumn="cWhName">
+				<s:datatype dt:type="string" dt:maxLength="20"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_cinvcode" rs:number="13" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_cinvcode">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_cinvname" rs:number="14" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="inventory" rs:basecolumn="cInvName">
+				<s:datatype dt:type="string" dt:maxLength="255"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_ccode" rs:number="15" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_ccode">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_ccode_name" rs:number="16" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="code" rs:basecolumn="ccode_name">
+				<s:datatype dt:type="string" dt:maxLength="100"/>
+			</s:AttributeType>
+			<s:AttributeType name="define22" rs:number="17" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="define22">
+				<s:datatype dt:type="string" dt:maxLength="20"/>
+			</s:AttributeType>
+			<s:AttributeType name="define23" rs:number="18" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="define23">
+				<s:datatype dt:type="string" dt:maxLength="20"/>
+			</s:AttributeType>
+			<s:AttributeType name="define24" rs:number="19" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="define24">
+				<s:datatype dt:type="string" dt:maxLength="20"/>
+			</s:AttributeType>
+			<s:AttributeType name="define25" rs:number="20" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="define25">
+				<s:datatype dt:type="string" dt:maxLength="20"/>
+			</s:AttributeType>
+			<s:AttributeType name="define26" rs:number="21" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="define26">
+				<s:datatype dt:type="float" dt:maxLength="8" rs:precision="15" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="define27" rs:number="22" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="define27">
+				<s:datatype dt:type="float" dt:maxLength="8" rs:precision="15" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="define28" rs:number="23" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="define28">
+				<s:datatype dt:type="string" dt:maxLength="20"/>
+			</s:AttributeType>
+			<s:AttributeType name="define29" rs:number="24" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="define29">
+				<s:datatype dt:type="string" dt:maxLength="20"/>
+			</s:AttributeType>
+			<s:AttributeType name="define30" rs:number="25" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="define30">
+				<s:datatype dt:type="string" dt:maxLength="20"/>
+			</s:AttributeType>
+			<s:AttributeType name="define31" rs:number="26" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="define31">
+				<s:datatype dt:type="string" dt:maxLength="20"/>
+			</s:AttributeType>
+			<s:AttributeType name="define32" rs:number="27" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="define32">
+				<s:datatype dt:type="string" dt:maxLength="20"/>
+			</s:AttributeType>
+			<s:AttributeType name="define33" rs:number="28" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="define33">
+				<s:datatype dt:type="string" dt:maxLength="20"/>
+			</s:AttributeType>
+			<s:AttributeType name="define34" rs:number="29" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="define34">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="define35" rs:number="30" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="define35">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="define36" rs:number="31" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="define36">
+				<s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="define37" rs:number="32" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="define37">
+				<s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str1" rs:number="33" rs:nullable="true">
+				<s:datatype dt:type="string" dt:maxLength="40"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str2" rs:number="34" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str2">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str3" rs:number="35" rs:nullable="true">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str4" rs:number="36" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str4">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str5" rs:number="37" rs:nullable="true">
+				<s:datatype dt:type="string" dt:maxLength="15"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str6" rs:number="38" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str6">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str7" rs:number="39" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str7">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str8" rs:number="40" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str8">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str9" rs:number="41" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str9">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str10" rs:number="42" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str10">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str11" rs:number="43" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str11">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str12" rs:number="44" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str12">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str13" rs:number="45" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str13">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str14" rs:number="46" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str14">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str15" rs:number="47" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str15">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str16" rs:number="48" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str16">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str17" rs:number="49" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str17">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str18" rs:number="50" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str18">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str19" rs:number="51" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str19">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str20" rs:number="52" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str20">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str21" rs:number="53" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str21">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str22" rs:number="54" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str22">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str23" rs:number="55" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str23">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str24" rs:number="56" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str24">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str25" rs:number="57" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str25">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str26" rs:number="58" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str26">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str27" rs:number="59" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str27">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str28" rs:number="60" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str28">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str29" rs:number="61" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str29">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str30" rs:number="62" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str30">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str31" rs:number="63" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str31">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str32" rs:number="64" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str32">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str33" rs:number="65" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str33">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str34" rs:number="66" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str34">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str35" rs:number="67" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str35">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str36" rs:number="68" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str36">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str37" rs:number="69" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str37">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str38" rs:number="70" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str38">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str39" rs:number="71" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str39">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str40" rs:number="72" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str40">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str41" rs:number="73" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str41">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str42" rs:number="74" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str42">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str43" rs:number="75" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str43">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str44" rs:number="76" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str44">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str45" rs:number="77" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str45">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str46" rs:number="78" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str46">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str47" rs:number="79" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str47">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str48" rs:number="80" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str48">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str49" rs:number="81" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str49">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str50" rs:number="82" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str50">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str51" rs:number="83" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str51">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str52" rs:number="84" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str52">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str53" rs:number="85" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str53">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str54" rs:number="86" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str54">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str55" rs:number="87" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str55">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str56" rs:number="88" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str56">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str57" rs:number="89" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str57">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str58" rs:number="90" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str58">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str59" rs:number="91" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str59">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str60" rs:number="92" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str60">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str61" rs:number="93" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str61">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str62" rs:number="94" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str62">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str63" rs:number="95" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str63">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str64" rs:number="96" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str64">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str65" rs:number="97" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str65">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str66" rs:number="98" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str66">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str67" rs:number="99" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str67">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str68" rs:number="100" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str68">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str69" rs:number="101" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str69">
+				<s:datatype dt:type="string" dt:maxLength="50"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str70" rs:number="102" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str70">
+				<s:datatype dt:type="string" dt:maxLength="200"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str71" rs:number="103" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str71">
+				<s:datatype dt:type="string" dt:maxLength="200"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str72" rs:number="104" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str72">
+				<s:datatype dt:type="string" dt:maxLength="200"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str73" rs:number="105" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str73">
+				<s:datatype dt:type="string" dt:maxLength="200"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str74" rs:number="106" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str74">
+				<s:datatype dt:type="string" dt:maxLength="200"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str75" rs:number="107" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str75">
+				<s:datatype dt:type="string" dt:maxLength="200"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str76" rs:number="108" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str76">
+				<s:datatype dt:type="string" dt:maxLength="200"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str77" rs:number="109" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str77">
+				<s:datatype dt:type="string" dt:maxLength="200"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str78" rs:number="110" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str78">
+				<s:datatype dt:type="string" dt:maxLength="200"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str79" rs:number="111" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str79">
+				<s:datatype dt:type="string" dt:maxLength="200"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_str80" rs:number="112" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_str80">
+				<s:datatype dt:type="string" dt:maxLength="200"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_int1" rs:number="113" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_int1">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_int2" rs:number="114" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_int2">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_int3" rs:number="115" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_int3">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_int4" rs:number="116" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_int4">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_int5" rs:number="117" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_int5">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_int6" rs:number="118" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_int6">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_int7" rs:number="119" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_int7">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_int8" rs:number="120" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_int8">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_int9" rs:number="121" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_int9">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_int10" rs:number="122" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_int10">
+				<s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_float1" rs:number="123" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_float1">
+				<s:datatype dt:type="number" rs:dbtype="numeric" dt:maxLength="19" rs:scale="10" rs:precision="30" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_float2" rs:number="124" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_float2">
+				<s:datatype dt:type="number" rs:dbtype="numeric" dt:maxLength="19" rs:scale="10" rs:precision="30" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_float3" rs:number="125" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_float3">
+				<s:datatype dt:type="number" rs:dbtype="numeric" dt:maxLength="19" rs:scale="10" rs:precision="30" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_float4" rs:number="126" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_float4">
+				<s:datatype dt:type="number" rs:dbtype="numeric" dt:maxLength="19" rs:scale="10" rs:precision="30" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_float5" rs:number="127" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_float5">
+				<s:datatype dt:type="number" rs:dbtype="numeric" dt:maxLength="19" rs:scale="10" rs:precision="30" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_float6" rs:number="128" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_float6">
+				<s:datatype dt:type="number" rs:dbtype="numeric" dt:maxLength="19" rs:scale="10" rs:precision="30" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_float7" rs:number="129" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_float7">
+				<s:datatype dt:type="number" rs:dbtype="numeric" dt:maxLength="19" rs:scale="10" rs:precision="30" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_float8" rs:number="130" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_float8">
+				<s:datatype dt:type="number" rs:dbtype="numeric" dt:maxLength="19" rs:scale="10" rs:precision="30" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_float9" rs:number="131" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_float9">
+				<s:datatype dt:type="number" rs:dbtype="numeric" dt:maxLength="19" rs:scale="10" rs:precision="30" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_float10" rs:number="132" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_float10">
+				<s:datatype dt:type="number" rs:dbtype="numeric" dt:maxLength="19" rs:scale="10" rs:precision="30" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_datetime1" rs:number="133" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_datetime1">
+				<s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_datetime2" rs:number="134" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_datetime2">
+				<s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_datetime3" rs:number="135" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_datetime3">
+				<s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_datetime4" rs:number="136" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_datetime4">
+				<s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_datetime5" rs:number="137" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_datetime5">
+				<s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_datetime6" rs:number="138" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_datetime6">
+				<s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_datetime7" rs:number="139" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_datetime7">
+				<s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_datetime8" rs:number="140" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_datetime8">
+				<s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_datetime9" rs:number="141" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_datetime9">
+				<s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="b_datetime10" rs:number="142" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="EFYX_Machines" rs:basecolumn="b_datetime10">
+				<s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="editprop" rs:number="143">
+				<s:datatype dt:type="string" rs:dbtype="str" dt:maxLength="1" rs:maybenull="false"/>
+			</s:AttributeType>
+			<s:AttributeType name="cInvCode" rs:number="144" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="inventory" rs:basecolumn="cInvCode" rs:keycolumn="true" rs:hidden="true">
+				<s:datatype dt:type="string" dt:maxLength="20"/>
+			</s:AttributeType>
+			<s:AttributeType name="pubufts" rs:number="145" rs:rowver="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="inventory" rs:basecolumn="pubufts" rs:hidden="true">
+				<s:datatype dt:type="bin.hex" dt:maxLength="8" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="cDepCode" rs:number="146" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="Department" rs:basecolumn="cDepCode" rs:keycolumn="true" rs:hidden="true">
+				<s:datatype dt:type="string" dt:maxLength="12"/>
+			</s:AttributeType>
+			<s:AttributeType name="c146" rs:name="pubufts" rs:number="147" rs:rowver="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="Department" rs:basecolumn="pubufts" rs:hidden="true">
+				<s:datatype dt:type="bin.hex" dt:maxLength="8" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="cPersonCode" rs:number="148" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="Person" rs:basecolumn="cPersonCode" rs:keycolumn="true" rs:hidden="true">
+				<s:datatype dt:type="string" dt:maxLength="20"/>
+			</s:AttributeType>
+			<s:AttributeType name="c148" rs:name="pubufts" rs:number="149" rs:rowver="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="Person" rs:basecolumn="pubufts" rs:hidden="true">
+				<s:datatype dt:type="bin.hex" dt:maxLength="8" rs:fixedlength="true"/>
+			</s:AttributeType>
+			<s:AttributeType name="cCusCode" rs:number="150" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_002_2010" rs:basetable="Customer" rs:basecolumn="cCusCode" rs:keycolumn="true" rs:hidden="true">
+				<s:datatype dt:type="string" dt:maxLength="20"/>
+			</s:AttributeType>
+			<s:extends type="rs:rowbase"/>
+		</s:ElementType>
+	</s:Schema>
+	<rs:data>
+		<z:row autoid="1" id="990000001" b_cdepcode="1602002" b_cdepname="彩印印刷" b_str1="凹版印刷机" b_str2="O101 01 Z" b_str3="1#印刷机" b_str5="0101" b_float1="136800.0000000000" b_float2="11400.0000000000" b_float3="1.0000000000" editprop="" cDepCode="1602002" c146="00000000002a6bc7"/>
+		<z:row autoid="3" id="990000001" b_cdepcode="1602002" b_cdepname="彩印印刷" b_str1="凹版印刷机" b_str2="O101 03 Z" b_str3="3#印刷机" b_str5="0101" b_float1="172800.0000000000" b_float2="14400.0000000000" b_float3="1.0000000000" editprop="" cDepCode="1602002" c146="00000000002a6bc7"/>
+		<z:row autoid="4" id="990000001" b_cdepcode="1602002" b_cdepname="彩印印刷" b_str1="凹版印刷机" b_str2="O101 04 Z" b_str3="4＃印刷机" b_str5="0101" b_float1="136800.0000000000" b_float2="11400.0000000000" b_float3="1.0000000000" editprop="" cDepCode="1602002" c146="00000000002a6bc7"/>
+		<z:row autoid="5" id="990000001" b_cdepcode="1603002" b_cdepname="药包印刷" b_str1="凹版印刷机" b_str2="O101 05 Z" b_str3="5＃印刷机" b_str5="0101" b_float1="158400.0000000000" b_float2="13200.0000000000" b_float3="1.0000000000" editprop="" cDepCode="1603002" c146="00000000002a6bce"/>
+		<z:row autoid="6" id="990000001" b_cdepcode="1604002" b_cdepname="食包柔印" b_str1="柔版印刷机" b_str2="O101 07 Z" b_str3="7＃柔版印刷机" b_str5="0102" b_float1="129600.0000000000" b_float2="10800.0000000000" b_float3="1.0000000000" editprop="" cDepCode="1604002" c146="00000000002a6bd6"/>
+		<z:row autoid="7" id="990000001" b_cdepcode="1604001" b_cdepname="食包印刷" b_str1="凹版印刷机" b_str2="O101 08 Z" b_str3="8＃印刷机" b_str5="0101" b_float1="172800.0000000000" b_float2="14400.0000000000" b_float3="1.0000000000" editprop="" cDepCode="1604001" c146="00000000002a6bd5"/>
+		<z:row autoid="8" id="990000001" b_cdepcode="1604001" b_cdepname="食包印刷" b_str1="凹版印刷机" b_str2="O101 09 Z" b_str3="9＃印刷机" b_str5="0101" b_float1="172800.0000000000" b_float2="14400.0000000000" b_float3="1.0000000000" editprop="" cDepCode="1604001" c146="00000000002a6bd5"/>
+		<z:row autoid="9" id="990000001" b_cdepcode="1604001" b_cdepname="食包印刷" b_str1="凹版印刷机" b_str2="O101 10 Z" b_str3="10＃印刷机" b_str5="0101" b_float1="158400.0000000000" b_float2="13200.0000000000" b_float3="1.0000000000" editprop="" cDepCode="1604001" c146="00000000002a6bd5"/>
+		<z:row autoid="10" id="990000001" b_cdepcode="1602003" b_cdepname="彩印干复" b_str1="干式复合机" b_str2="O102 01 Z" b_str3="1＃复合机" b_str5="0201" b_float1="86400.0000000000" b_float2="7200.0000000000" b_float3="1.0000000000" editprop="" cDepCode="1602003" c146="00000000002a6bc8"/>
+		<z:row autoid="11" id="990000001" b_cdepcode="1602003" b_cdepname="彩印干复" b_str1="干式复合机" b_str2="O102 02 Z" b_str3="2＃复合机" b_str5="0201" b_float1="86400.0000000000" b_float2="7200.0000000000" b_float3="1.0000000000" editprop="" cDepCode="1602003" c146="00000000002a6bc8"/>
+		<z:row autoid="12" id="990000001" b_cdepcode="1602003" b_cdepname="彩印干复" b_str1="干式复合机" b_str2="O102 03 Z" b_str3="3＃复合机" b_str5="0201" b_float1="86400.0000000000" b_float2="7200.0000000000" b_float3="1.0000000000" editprop="" cDepCode="1602003" c146="00000000002a6bc8"/>
+		<z:row autoid="13" id="990000001" b_cdepcode="1602003" b_cdepname="彩印干复" b_str1="干式复合机" b_str2="O102 04Z" b_str3="4＃复合机" b_str5="0201" b_float1="86400.0000000000" b_float2="7200.0000000000" b_float3="1.0000000000" editprop="" cDepCode="1602003" c146="00000000002a6bc8"/>
+		<z:row autoid="14" id="990000001" b_cdepcode="1603003" b_cdepname="药包干复" b_str1="干式复合机" b_str2="O102 05Z" b_str3="5＃复合机" b_str5="0201" b_float1="86400.0000000000" b_float2="7200.0000000000" b_float3="1.0000000000" editprop="" cDepCode="1603003" c146="00000000002a6bcf"/>
+		<z:row autoid="15" id="990000001" b_cdepcode="1603003" b_cdepname="药包干复" b_str1="干式复合机" b_str2="O102 06 Z" b_str3="6＃复合机" b_str5="0201" b_float1="86400.0000000000" b_float2="7200.0000000000" b_float3="1.0000000000" editprop="" cDepCode="1603003" c146="00000000002a6bcf"/>
+		<z:row autoid="16" id="990000001" b_cdepcode="1603003" b_cdepname="药包干复" b_str1="干式复合机" b_str2="O102 07Z" b_str3="7＃复合机" b_str5="0201" b_float1="86400.0000000000" b_float2="7200.0000000000" b_float3="1.0000000000" editprop="" cDepCode="1603003" c146="00000000002a6bcf"/>
+		<z:row autoid="17" id="990000001" b_cdepcode="1604003" b_cdepname="食包干复" b_str1="干式复合机" b_str2="O102 08 Z" b_str3="8＃复合机" b_str5="0201" b_float1="86400.0000000000" b_float2="7200.0000000000" b_float3="1.0000000000" editprop="" cDepCode="1604003" c146="00000000002a6bd7"/>
+		<z:row autoid="18" id="990000001" b_cdepcode="1604003" b_cdepname="食包干复" b_str1="干式复合机" b_str2="O102 09 Z" b_str3="9＃复合机" b_str5="0201" b_float1="86400.0000000000" b_float2="7200.0000000000" b_float3="1.0000000000" editprop="" cDepCode="1604003" c146="00000000002a6bd7"/>
+		<z:row autoid="19" id="990000001" b_cdepcode="1604003" b_cdepname="食包干复" b_str1="干式复合机" b_str2="O102 10 Z" b_str3="10＃复合机" b_str5="0201" b_float1="86400.0000000000" b_float2="7200.0000000000" b_float3="1.0000000000" editprop="" cDepCode="1604003" c146="00000000002a6bd7"/>
+		<z:row autoid="20" id="990000001" b_cdepcode="1604003" b_cdepname="食包干复" b_str1="干式复合机" b_str2="O102 11 Z" b_str3="11＃复合机" b_str5="0201" b_float1="86400.0000000000" b_float2="7200.0000000000" b_float3="1.0000000000" editprop="" cDepCode="1604003" c146="00000000002a6bd7"/>
+		<z:row autoid="21" id="990000001" b_cdepcode="1604003" b_cdepname="食包干复" b_str1="无溶剂复合机" b_str2="O102 12 Z" b_str3="12＃无溶剂复合机" b_str5="0202" b_float1="86400.0000000000" b_float2="7200.0000000000" b_float3="1.0000000000" editprop="" cDepCode="1604003" c146="00000000002a6bd7"/>
+		<z:row autoid="22" id="990000001" b_cdepcode="1602004" b_cdepname="彩印挤复" b_str1="挤复机" b_str2="O103 01 Z" b_str3="1＃挤复机" b_str4="PE" b_str5="03" b_float1="64800.0000000000" b_float2="5400.0000000000" b_float3="1.0000000000" editprop="" cDepCode="1602004" c146="00000000002a6bc9"/>
+		<z:row autoid="23" id="990000001" b_cdepcode="1603004" b_cdepname="药包挤复" b_str1="挤复机" b_str2="O103 02Z" b_str3="2＃挤复机" b_str4="PE" b_str5="03" b_float1="64800.0000000000" b_float2="5400.0000000000" b_float3="1.0000000000" editprop="" cDepCode="1603004" c146="00000000002a6bd0"/>
+		<z:row autoid="24" id="990000001" b_cdepcode="1604004" b_cdepname="食包挤复" b_str1="挤复机" b_str2="O103 03 Z" b_str3="3＃挤复机" b_str4="PP" b_str5="03" b_float1="108000.0000000000" b_float2="9000.0000000000" b_float3="1.0000000000" editprop="" cDepCode="1604004" c146="00000000002a6bd8"/>
+		<z:row autoid="25" id="990000001" b_cdepcode="1604004" b_cdepname="食包挤复" b_str1="挤复机" b_str2="O103 04Z" b_str3="4＃挤复机" b_str4="PP" b_str5="03" b_float1="108000.0000000000" b_float2="9000.0000000000" b_float3="1.0000000000" editprop="" cDepCode="1604004" c146="00000000002a6bd8"/>
+		<z:row autoid="26" id="990000001" b_cdepcode="1604004" b_cdepname="食包挤复" b_str1="挤复机" b_str2="O103 05 Z" b_str3="5＃挤复机" b_str4="PP" b_str5="03" b_float1="108000.0000000000" b_float2="9000.0000000000" b_float3="1.0000000000" editprop="" cDepCode="1604004" c146="00000000002a6bd8"/>
+		<z:row autoid="27" id="990000001" b_cdepcode="1604004" b_cdepname="食包挤复" b_str1="挤复机" b_str2="O103 06Z" b_str3="6＃挤复机" b_str4="PP" b_str5="03" b_float1="108000.0000000000" b_float2="9000.0000000000" b_float3="1.0000000000" editprop="" cDepCode="1604004" c146="00000000002a6bd8"/>
+		<z:row autoid="28" id="990000001" b_cdepcode="1602005" b_cdepname="彩印分切" b_str1="分切机" b_str2="O105 01 Z" b_str3="1#分切机" b_str5="0401" b_float3="1.0000000000" editprop="" cDepCode="1602005" c146="00000000002a
+		6bca"/>
+		<z:row autoid="29" id="990000001" b_cdepcode="1602005" b_cdepname="彩印分切" b_str1="分切机" b_str2="O105 02 Z" b_str3="2＃分切机" b_str5="0401" b_float3="1.0000000000" editprop="" cDepCode="1602005" c146="0000000000
+		2a6bca"/>
+		<z:row autoid="30" id="990000001" b_cdepcode="1602005" b_cdepname="彩印分切" b_str1="分切机" b_str2="O105 03 Z" b_str3="3＃分切机" b_str5="0401" b_float3="1.0000000000" editprop="" cDepCode="1602005" c146="0000000000
+		2a6bca"/>
+		<z:row autoid="31" id="990000001" b_cdepcode="1602005" b_cdepname="彩印分切" b_str1="分切机" b_str2="O105 04 Z" b_str3="4＃分切机" b_str5="0401" b_float3="1.0000000000" editprop="" cDepCode="1602005" c146="0000000000
+		2a6bca"/>
+		<z:row autoid="32" id="990000001" b_cdepcode="1602005" b_cdepname="彩印分切" b_str1="分切机" b_str2="O105 05 Z" b_str3="5＃分切机" b_str5="0401" b_float3="1.0000000000" editprop="" cDepCode="1602005" c146="0000000000
+		2a6bca"/>
+		<z:row autoid="215" id="990000001" b_cdepcode="1602006" b_cdepname="彩印制袋" b_str1="制袋机" b_str2="O106 109 Z" b_str3="9＃中封制袋机" b_str5="05" b_float3="1.0000000000" editprop="" cDepCode="1602006" c146="000000
+		00002a6bcb"/>
+		<z:row autoid="216" id="990000001" b_cdepcode="1602006" b_cdepname="彩印制袋" b_str1="制袋机" b_str2="O106 110 Z" b_str3="10＃中封制袋机" b_str5="05" b_float3="1.0000000000" editprop="" cDepCode="1602006" c146="0000
+		0000002a6bcb"/>
+		<z:row autoid="283" id="990000001" b_cdepcode="1604006" b_cdepname="食包制袋" b_str1="制袋机" b_str2="O106 312 Z" b_str3="12＃三边封制袋机" b_str5="05" b_float3="1.0000000000" editprop="" cDepCode="1604006" c146="00
+		000000002a6bda"/>
+		<z:row autoid="284" id="990000001" b_cdepcode="1604006" b_cdepname="食包制袋" b_str1="制袋机" b_str2="O106 313Z" b_str3="13＃三边封制袋机" b_str5="05" b_float3="1.0000000000" editprop="" cDepCode="1604006" c146="00
+		000000002a6bda"/>
+		<z:row autoid="2" id="990000001" b_cdepcode="1602002" b_cdepname="彩印印刷" b_str1="凹版印刷机" b_str2="O101 02 Z" b_str3="2#印刷机" b_str5="0101" b_float1="158400.0000000000" b_float2="13200.0000000000" b_float3="1.0000000000" editprop="D" cDepCode="1602002" c146="00000000002a6bc7"/>
+		<z:row autoid="403" id="990000001" b_cdepcode="1603006" b_cdepname="药包制袋" b_str1="制袋机" b_str2="O106 315 Z" b_str3="15＃三边封制袋机" b_str4="PP" b_str5="05" b_float1="3.0000000000" b_float2="4.0000000000" b_float3="222.0000000000" editprop="D" cDepCode="1603006" c146="00000000002a6bd2"/>
+		<z:row autoid="402" id="990000001" b_cdepcode="1603006" b_cdepname="药包制袋" b_str1="制袋机" b_str2="O106 311 Z" b_str3="11＃三边封制袋机" b_str4="PP" b_str5="05" b_float1="7.0000000000" b_float2="8.0000000000" b_float3="3.0000000000" editprop="D" cDepCode="1603006" c146="00000000002a6bd2"/>
+		<z:row autoid="401" id="990000001" b_cdepcode="1602006" b_cdepname="彩印制袋" b_str1="制袋机" b_str2="O106 301 Z" b_str3="1＃三边封制袋机" b_str5="05" editprop="D" cDepCode="1602006" c146="00000000002a6bcb"/>
+		<z:row autoid="400" id="990000001" b_cdepcode="1604006" b_cdepname="食包制袋" b_str1="制袋机" b_str2="O106 117 Z" b_str3="17＃中封制袋机" b_str5="05" editprop="D" cDepCode="1604006" c146="00000000002a6bda"/>
+		<z:row autoid="399" id="990000001" b_cdepcode="1604006" b_cdepname="食包制袋" b_str1="制袋机" b_str2="O106 116 Z" b_str3="16＃中封制袋机" b_str5="05" editprop="D" cDepCode="1604006" c146="00000000002a6bda"/>
+		<z:row autoid="398" id="990000001" b_cdepcode="1603006" b_cdepname="药包制袋" b_str1="制袋机" b_str2="O106 115Z" b_str3="15＃中封制袋机" b_str5="05" editprop="D" cDepCode="1603006" c146="00000000002a6bd2"/>
+		<z:row autoid="397" id="990000001" b_cdepcode="1602006" b_cdepname="彩印制袋" b_str1="制袋机" b_str2="O106 112 Z" b_str3="12＃中封制袋机" b_str5="05" editprop="D" cDepCode="1602006" c146="00000000002a6bcb"/>
+		<z:row autoid="396" id="990000001" b_cdepcode="1602006" b_cdepname="彩印制袋" b_str1="制袋机" b_str2="O106 111 Z" b_str3="11＃中封制袋机" b_str5="05" editprop="D" cDepCode="1602006" c146="00000000002a6bcb"/>
+		<z:row autoid="395" id="990000001" b_cdepcode="1603006" b_cdepname="药包制袋" b_str1="制袋机" b_str2="O106 310 Z" b_str3="10# 三边封制袋机" b_str5="05" editprop="D" cDepCode="1603006" c146="00000000002a6bd2"/>
+		<z:row autoid="394" id="990000001" b_cdepcode="1602006" b_cdepname="彩印制袋" b_str1="制袋机" b_str2="O106 309 Z" b_str3="9＃三边封（切标机）" b_str5="05" editprop="D" cDepCode="1602006" c146="00000000002a6bcb"/>
+		<z:row autoid="393" id="990000001" b_cdepcode="1602006" b_cdepname="彩印制袋" b_str1="制袋机" b_str2="O106 308 Z" b_str3="8＃三边封制袋机" b_str5="05" editprop="D" cDepCode="1602006" c146="00000000002a6bcb"/>
+		<z:row autoid="392" id="990000001" b_cdepcode="1602006" b_cdepname="彩印制袋" b_str1="制袋机" b_str2="O106 307 Z" b_str3="7＃三边封制袋机" b_str5="05" editprop="D" cDepCode="1602006" c146="00000000002a6bcb"/>
+		<z:row autoid="391" id="990000001" b_cdepcode="1602006" b_cdepname="彩印制袋" b_str1="制袋机" b_str2="O106 306 Z" b_str3="6＃三边封制袋机" b_str5="05" editprop="D" cDepCode="1602006" c146="00000000002a6bcb"/>
+		<z:row autoid="390" id="990000001" b_cdepcode="1602006" b_cdepname="彩印制袋" b_str1="制袋机" b_str2="O106 305 Z" b_str3="5＃三边封制袋机" b_str5="05" editprop="D" cDepCode="1602006" c146="00000000002a6bcb"/>
+		<z:row autoid="389" id="990000001" b_cdepcode="1602006" b_cdepname="彩印制袋" b_str1="制袋机" b_str2="O106 304 Z" b_str3="4＃三边封制袋机" b_str5="05" editprop="D" cDepCode="1602006" c146="00000000002a6bcb"/>
+		<z:row autoid="388" id="990000001" b_cdepcode="1602006" b_cdepname="彩印制袋" b_str1="制袋机" b_str2="O106 303 Z" b_str3="3＃三边封制袋机" b_str5="05" editprop="D" cDepCode="1602006" c146="00000000002a6bcb"/>
+		<z:row autoid="387" id="990000001" b_cdepcode="1602006" b_cdepname="彩印制袋" b_str1="制袋机" b_str2="O106 302 Z" b_str3="2＃三边封制袋机" b_str5="05" editprop="D" cDepCode="1602006" c146="00000000002a6bcb"/>
+		<z:row autoid="386" id="990000001" b_cdepcode="1602006" b_cdepname="彩印制袋" b_str1="制袋机" b_str2="010612" b_str3="2＃中封制袋机" b_str5="05" editprop="D" cDepCode="1602006" c146="00000000002a6bcb"/>
+		<z:row autoid="385" id="990000001" b_cdepcode="1602006" b_cdepname="彩印制袋" b_str1="制袋机" b_str2="0106101" b_str3="1＃中封制袋机" b_str5="05" editprop="D" cDepCode="1602006" c146="00000000002a6bcb"/>
+		<z:row autoid="384" id="990000001" b_cdepcode="1602006" b_cdepname="彩印制袋" b_str1="制袋机" b_str2="O106 301 Z" b_str3="1＃三边封制袋机" b_str5="05" editprop="D" cDepCode="1602006" c146="00000000002a6bcb"/>
+		<z:row autoid="383" id="990000001" b_cdepcode="1604006" b_cdepname="食包制袋" b_str1="制袋机" b_str2="O106 901 Z" b_str3="1＃对合熔边制袋机" b_str5="05" editprop="D" cDepCode="1604006" c146="00000000002a6bda"/>
+		<z:row autoid="382" id="990000001" b_cdepcode="1604006" b_cdepname="食包制袋" b_str1="制袋机" b_str2="O106 801 Z" b_str3="1＃双步进底封加强片制袋机" b_str5="05" editprop="D" cDepCode="1604006" c146="00000000002a
+		6bda"/>
+		<z:row autoid="381" id="990000001" b_cdepcode="1604006" b_cdepname="食包制袋" b_str1="制袋机" b_str2="O106 701 Z" b_str3="1＃侧封自动制袋机" b_str5="05" editprop="D" cDepCode="1604006" c146="00000000002a6bda"/>
+		<z:row autoid="380" id="990000001" b_cdepcode="1603006" b_cdepname="药包制袋" b_str1="制袋机" b_str2="O106 601 Z" b_str3="1＃热切机" b_str5="05" editprop="D" cDepCode="1603006" c146="00000000002a6bd2"/>
+		<z:row autoid="379" id="990000001" b_cdepcode="1603006" b_cdepname="药包制袋" b_str1="制袋机" b_str2="O106 501 Z" b_str3="1＃斜嘴机" b_str5="05" editprop="D" cDepCode="1603006" c146="00000000002a6bd2"/>
+		<z:row autoid="378" id="990000001" b_cdepcode="1603006" b_cdepname="药包制袋" b_str1="制袋机" b_str2="O106 402 Z" b_str3="2＃直嘴机" b_str5="05" editprop="D" cDepCode="1603006" c146="00000000002a6bd2"/>
+		<z:row autoid="377" id="990000001" b_cdepcode="1603006" b_cdepname="药包制袋" b_str1="制袋机" b_str2="O106 401 Z" b_str3="1＃直嘴机" b_str5="05" editprop="D" cDepCode="1603006" c146="00000000002a6bd2"/>
+		<z:row autoid="376" id="990000001" b_cdepcode="1602006" b_cdepname="彩印制袋" b_str1="制袋机" b_str2="O106 203 Z" b_str3="3＃底封机" b_str5="05" editprop="D" cDepCode="1602006" c146="00000000002a6bcb"/>
+		<z:row autoid="375" id="990000001" b_cdepcode="1602006" b_cdepname="彩印制袋" b_str1="制袋机" b_str2="O106 202 Z" b_str3="2＃底封机" b_str5="05" editprop="D" cDepCode="1602006" c146="00000000002a6bcb"/>
+		<z:row autoid="374" id="990000001" b_cdepcode="1602006" b_cdepname="彩印制袋" b_str1="制袋机" b_str2="O106 201 Z" b_str3="1＃底封机" b_str5="05" editprop="D" cDepCode="1602006" c146="00000000002a6bcb"/>
+		<z:row autoid="373" id="990000001" b_cdepcode="1602006" b_cdepname="彩印制袋" b_str1="制袋机" b_str2="O106 107Z" b_str3="7＃中封制袋机" b_str5="05" editprop="D" cDepCode="1602006" c146="00000000002a6bcb"/>
+		<z:row autoid="370" id="990000001" b_cdepcode="1602006" b_cdepname="彩印制袋" b_str1="制袋机" b_str2="O106 106 Z" b_str3="6＃中封制袋机" b_str5="05" editprop="D" cDepCode="1602006" c146="00000000002a6bcb"/>
+		<z:row autoid="369" id="990000001" b_cdepcode="1602006" b_cdepname="彩印制袋" b_str1="制袋机" b_str2="O106 105Z" b_str3="5＃中封制袋机" b_str5="05" editprop="D" cDepCode="1602006" c146="00000000002a6bcb"/>
+		<z:row autoid="368" id="990000001" b_cdepcode="1602006" b_cdepname="彩印制袋" b_str1="制袋机" b_str2="O106 104 Z" b_str3="4＃中封制袋机" b_str5="05" editprop="D" cDepCode="1602006" c146="00000000002a6bcb"/>
+		<z:row autoid="367" id="990000001" b_cdepcode="1602006" b_cdepname="彩印制袋" b_str1="制袋机" b_str2="O106 103 Z" b_str3="3# 中封制袋机" b_str5="05" editprop="D" cDepCode="1602006" c146="00000000002a6bcb"/>
+		<z:row autoid="366" id="990000001" b_cdepcode="1602005" b_cdepname="彩印分切" b_str1="分切机" b_str2="O105 06 Z" b_str3="6＃分切机" b_str5="0401" editprop="D" cDepCode="1602005" c146="00000000002a6bca"/>
+		<z:row autoid="365" id="990000001" b_cdepcode="1605004" b_cdepname="包材镀铝" b_str1="分切机" b_str2="O105 20 Z" b_str3="20＃分切机" b_str5="0401" editprop="D" cDepCode="1605004" c146="00000000002a6bdf"/>
+		<z:row autoid="364" id="990000001" b_cdepcode="1605004" b_cdepname="包材镀铝" b_str1="分切机" b_str2="O105 19 Z" b_str3="19＃分切机" b_str5="0401" editprop="D" cDepCode="1605004" c146="00000000002a6bdf"/>
+		<z:row autoid="363" id="990000001" b_cdepcode="1605004" b_cdepname="包材镀铝" b_str1="分切机" b_str2="O105 18 Z" b_str3="18＃分切机" b_str5="0401" editprop="D" cDepCode="1605004" c146="00000000002a6bdf"/>
+		<z:row autoid="362" id="990000001" b_cdepcode="1605003" b_cdepname="包材CPP" b_str1="分切机" b_str2="O105 17 Z" b_str3="17＃分切机" b_str5="0401" editprop="D" cDepCode="1605003" c146="00000000002a6bde"/>
+		<z:row autoid="361" id="990000001" b_cdepcode="1605003" b_cdepname="包材CPP" b_str1="分切机" b_str2="O105 16 Z" b_str3="16＃分切机" b_str5="0401" editprop="D" cDepCode="1605003" c146="00000000002a6bde"/>
+		<z:row autoid="360" id="990000001" b_cdepcode="1605003" b_cdepname="包材CPP" b_str1="分切机" b_str2="O105 15 Z" b_str3="15＃分切机" b_str5="0401" editprop="D" cDepCode="1605003" c146="00000000002a6bde"/>
+		<z:row autoid="359" id="990000001" b_cdepcode="1605002" b_cdepname="包材PE" b_str1="分切机" b_str2="O105 14 Z" b_str3="14＃分切机" b_str5="0401" editprop="D" cDepCode="1605002" c146="00000000002a6bdd"/>
+		<z:row autoid="358" id="990000001" b_cdepcode="1603005" b_cdepname="药包分切" b_str1="分切机" b_str2="O105 13 Z" b_str3="13＃分切机" b_str5="0401" editprop="D" cDepCode="1603005" c146="00000000002a6bd1"/>
+		<z:row autoid="357" id="990000001" b_cdepcode="1603005" b_cdepname="药包分切" b_str1="分切机" b_str2="O105 12 Z" b_str3="12＃分切机" b_str5="0401" editprop="D" cDepCode="1603005" c146="00000000002a6bd1"/>
+		<z:row autoid="356" id="990000001" b_cdepcode="1603005" b_cdepname="药包分切" b_str1="分切机" b_str2="O105 11 Z" b_str3="11＃分切机" b_str5="0401" editprop="D" cDepCode="1603005" c146="00000000002a6bd1"/>
+		<z:row autoid="355" id="990000001" b_cdepcode="1603005" b_cdepname="药包分切" b_str1="分切机" b_str2="O105 10 Z" b_str3="10＃分切机" b_str5="0401" editprop="D" cDepCode="1603005" c146="00000000002a6bd1"/>
+		<z:row autoid="354" id="990000001" b_cdepcode="1602005" b_cdepname="彩印分切" b_str1="分切机" b_str2="O105 09 Z" b_str3="9＃分切机" b_str5="0401" editprop="D" cDepCode="1602005" c146="00000000002a6bca"/>
+		<z:row autoid="353" id="990000001" b_cdepcode="1602005" b_cdepname="彩印分切" b_str1="分切机" b_str2="O105 08 Z" b_str3="8＃分切机" b_str5="0401" editprop="D" cDepCode="1602005" c146="00000000002a6bca"/>
+		<z:row autoid="352" id="990000001" b_cdepcode="1602005" b_cdepname="彩印分切" b_str1="分切机" b_str2="O105 07 Z" b_str3="7＃分切机" b_str5="0401" editprop="D" cDepCode="1602005" c146="00000000002a6bca"/>
+		<z:row autoid="351" id="990000001" b_cdepcode="1604005" b_cdepname="食包分切" b_str1="分切机" b_str2="O105 30 Z" b_str3="30＃分切机" b_str5="0401" editprop="D" cDepCode="1604005" c146="00000000002a6bd9"/>
+		<z:row autoid="350" id="990000001" b_cdepcode="1604005" b_cdepname="食包分切" b_str1="分切机" b_str2="O105 28 Z" b_str3="28＃分切机" b_str5="0401" editprop="D" cDepCode="1604005" c146="00000000002a6bd9"/>
+		<z:row autoid="349" id="990000001" b_cdepcode="1604005" b_cdepname="食包分切" b_str1="分切机" b_str2="O105 27 Z" b_str3="27＃分切机" b_str5="0401" editprop="D" cDepCode="1604005" c146="00000000002a6bd9"/>
+		<z:row autoid="348" id="990000001" b_cdepcode="1604005" b_cdepname="食包分切" b_str1="分切机" b_str2="O105 26 Z" b_str3="26＃分切机" b_str5="0401" editprop="D" cDepCode="1604005" c146="00000000002a6bd9"/>
+		<z:row autoid="347" id="990000001" b_cdepcode="1604005" b_cdepname="食包分切" b_str1="分切机" b_str2="O10525 Z" b_str3="25＃分切机" b_str5="0401" editprop="D" cDepCode="1604005" c146="00000000002a6bd9"/>
+		<z:row autoid="346" id="990000001" b_cdepcode="1604005" b_cdepname="食包分切" b_str1="分切机" b_str2="O10524 Z" b_str3="24＃分切机" b_str5="0401" editprop="D" cDepCode="1604005" c146="00000000002a6bd9"/>
+		<z:row autoid="345" id="990000001" b_cdepcode="1604005" b_cdepname="食包分切" b_str1="分切机" b_str2="O105 23 Z" b_str3="23＃分切机" b_str5="0401" editprop="D" cDepCode="1604005" c146="00000000002a6bd9"/>
+		<z:row autoid="344" id="990000001" b_cdepcode="1604005" b_cdepname="食包分切" b_str1="分切机" b_str2="O105 22Z" b_str3="22＃分切机" b_str5="0401" editprop="D" cDepCode="1604005" c146="00000000002a6bd9"/>
+		<z:row autoid="343" id="990000001" b_cdepcode="1604005" b_cdepname="食包分切" b_str1="分切机" b_str2="O105 21 Z" b_str3="21＃分切机" b_str5="0401" editprop="D" cDepCode="1604005" c146="00000000002a6bd9"/>
+		<z:row autoid="342" id="990000001" b_cdepcode="1604005" b_cdepname="食包分切" b_str1="分切机" b_str2="O105 29 Z" b_str3="29＃分切机" b_str5="0401" editprop="D" cDepCode="1604005" c146="00000000002a6bd9"/>
+		<z:row autoid="341" id="990000001" b_str1="冷凝器" b_str2="0208 09F" b_str3="9#冷凝器" b_str5="3007" editprop="D"/>
+		<z:row autoid="340" id="990000001" b_str1="经济器" b_str2="0211 01 F" b_str3="1#经济器" b_str5="3010" editprop="D"/>
+		<z:row autoid="338" id="990000001" b_str1="安装" b_str2="0180" b_str3="安装" b_str5="50" editprop="D"/>
+		<z:row autoid="336" id="990000001" b_cdepcode="1603006" b_cdepname="药包制袋" b_str1="制袋机" b_str2="O106 114 Z" b_str3="14＃中封制袋机" b_str5="05" editprop="D" cDepCode="1603006" c146="00000000002a6bd2"/>
+		<z:row autoid="335" id="990000001" b_cdepcode="1604006" b_cdepname="食包制袋" b_str1="制袋机" b_str2="O106 113 Z" b_str3="13＃中封制袋机" b_str5="05" editprop="D" cDepCode="1604006" c146="00000000002a6bda"/>
+		<z:row autoid="334" id="990000001" b_cdepcode="1604006" b_cdepname="食包制袋" b_str1="制袋机" b_str2="0106319" b_str3="边19＃制袋机" b_str5="05" editprop="D" cDepCode="1604006" c146="00000000002a6bda"/>
+		<z:row autoid="333" id="990000001" b_cdepcode="1604006" b_cdepname="食包制袋" b_str1="制袋机" b_str2="0106318" b_str3="边18制袋机" b_str5="05" editprop="D" cDepCode="1604006" c146="00000000002a6bda"/>
+		<z:row autoid="332" id="990000001" b_cdepcode="1604006" b_cdepname="食包制袋" b_str1="制袋机" b_str2="0106317" b_str3="边17制袋机" b_str5="05" editprop="D" cDepCode="1604006" c146="00000000002a6bda"/>
+		<z:row autoid="310" id="990000001" b_cdepcode="1502003" b_cdepname="品检组" b_str1="品检机" b_str2="O104 09 Z" b_str3="9＃品检机" b_str5="0402" editprop="D" cDepCode="1502003" c146="00000000002a6bbd"/>
+		<z:row autoid="309" id="990000001" b_cdepcode="1502003" b_cdepname="品检组" b_str1="品检机" b_str2="O104 08 Z" b_str3="8＃品检机" b_str5="0402" editprop="D" cDepCode="1502003" c146="00000000002a6bbd"/>
+		<z:row autoid="308" id="990000001" b_cdepcode="1502003" b_cdepname="品检组" b_str1="品检机" b_str2="O104 07 Z" b_str3="7＃品检机" b_str5="0402" editprop="D" cDepCode="1502003" c146="00000000002a6bbd"/>
+		<z:row autoid="307" id="990000001" b_cdepcode="1502003" b_cdepname="品检组" b_str1="品检机" b_str2="O104 06 Z" b_str3="6＃品检机" b_str5="0402" editprop="D" cDepCode="1502003" c146="00000000002a6bbd"/>
+		<z:row autoid="306" id="990000001" b_cdepcode="1502003" b_cdepname="品检组" b_str1="品检机" b_str2="O104 05 Z" b_str3="5＃品检机" b_str5="0402" editprop="D" cDepCode="1502003" c146="00000000002a6bbd"/>
+		<z:row autoid="305" id="990000001" b_cdepcode="1502003" b_cdepname="品检组" b_str1="品检机" b_str2="O104 04 Z" b_str3="4＃品检机" b_str5="0402" editprop="D" cDepCode="1502003" c146="00000000002a6bbd"/>
+		<z:row autoid="304" id="990000001" b_cdepcode="1502003" b_cdepname="品检组" b_str1="品检机" b_str2="O104 03 Z" b_str3="3＃品检机" b_str5="0402" editprop="D" cDepCode="1502003" c146="00000000002a6bbd"/>
+		<z:row autoid="303" id="990000001" b_cdepcode="1502003" b_cdepname="品检组" b_str1="品检机" b_str2="O104 02 Z" b_str3="2＃品检机" b_str5="0402" editprop="D" cDepCode="1502003" c146="00000000002a6bbd"/>
+		<z:row autoid="302" id="990000001" b_cdepcode="1502003" b_cdepname="品检组" b_str1="品检机" b_str2="O104 01 Z" b_str3="1＃品检机" b_str5="0402" editprop="D" cDepCode="1502003" c146="00000000002a6bbd"/>
+		<z:row autoid="301" id="990000001" b_cdepcode="1605004" b_cdepname="包材镀铝" b_str1="镀铝机" b_str2="O107 04 Z" b_str3="4＃镀铝机" b_str5="12" b_float1="7200.0000000000" b_float2="600.0000000000" b_float3="1.0000000000" editprop="D" cDepCode="1605004" c146="00000000002a6bdf"/>
+		<z:row autoid="300" id="990000001" b_cdepcode="1605004" b_cdepname="包材镀铝" b_str1="镀铝机" b_str2="O107 03 Z" b_str3="3＃镀铝机" b_str5="12" b_float1="3600.0000000000" b_float2="300.0000000000" b_float3="1.0000000000" editprop="D" cDepCode="1605004" c146="00000000002a6bdf"/>
+		<z:row autoid="299" id="990000001" b_cdepcode="1605004" b_cdepname="包材镀铝" b_str1="镀铝机" b_str2="O107 02 Z" b_str3="2＃镀铝机" b_str5="12" b_float1="3600.0000000000" b_float2="300.0000000000" b_float3="1.0000000000" editprop="D" cDepCode="1605004" c146="00000000002a6bdf"/>
+		<z:row autoid="298" id="990000001" b_cdepcode="1605004" b_cdepname="包材镀铝" b_str1="镀铝机" b_str2="O107 01 Z" b_str3="1#镀铝机" b_str5="12" b_float1="3600.0000000000" b_float2="300.0000000000" b_float3="1.0000000000" editprop="D" cDepCode="1605004" c146="00000000002a6bdf"/>
+		<z:row autoid="297" id="990000001" b_cdepcode="1605003" b_cdepname="包材CPP" b_str1="CPP流延机" b_str2="O108 02 Z" b_str3="2＃流延机" b_str5="11" b_float1="6000.0000000000" b_float2="500.0000000000" b_float3="1.0000000000" editprop="D" cDepCode="1605003" c146="00000000002a6bde"/>
+		<z:row autoid="296" id="990000001" b_cdepcode="1605003" b_cdepname="包材CPP" b_str1="CPP流延机" b_str2="O108 01 Z" b_str3="1＃流延机" b_str5="11" b_float1="6000.0000000000" b_float2="500.0000000000" b_float3="1.0000000000" editprop="D" cDepCode="1605003" c146="00000000002a6bde"/>
+		<z:row autoid="288" id="990000001" b_cdepcode="1605002" b_cdepname="包材PE" b_str1="PE吹膜机" b_str2="O109 01 Z" b_str3="1＃吹膜机" b_str4="无" b_str5="1001" b_float1="3600.0000000000" b_float2="300.0000000000" b_float3="1.0000000000" editprop="D" cDepCode="1605002" c146="00000000002a6bdd"/>
+		<z:row autoid="287" id="990000001" b_cdepcode="1602004" b_cdepname="彩印挤复" b_str1="挤复机" b_str2="O103 01 Z" b_str3="1＃挤复机" b_str4="PP" b_str5="03" b_float3="1.0000000000" editprop="D" cDepCode="1602004" c146="
+		00000000002a6bc9"/>
+		<z:row autoid="286" id="990000001" b_cdepcode="1604006" b_cdepname="食包制袋" b_str1="制袋机" b_str2="O106 316 Z" b_str3="16＃三边封制袋机" b_str5="05" b_float3="1.0000000000" editprop="D" cDepCode="1604006" c146="00
+		000000002a6bda"/>
+		<z:row autoid="285" id="990000001" b_cdepcode="1604006" b_cdepname="食包制袋" b_str1="制袋机" b_str2="O106 314Z" b_str3="14＃三边封制袋机" b_str5="05" b_float3="1.0000000000" editprop="D" cDepCode="1604006" c146="00
+		000000002a6bda"/>
+	</rs:data>
+</xml>

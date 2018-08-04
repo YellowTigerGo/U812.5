@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 该配置文件包含有相关程序的重要配置请不要随意修改 设计作者 ahzzd 20100118 -->
+<ProductFacade_Information>
+	<Main>
+				<HelpFile>EFFY_zh-CN.chm</HelpFile>
+ 	</Main>
+ 	
+ 	<Control>
+ 	
+ 	</Control>
+ 	
+ 	<Model>
+ 	
+ 	</Model>
+  <other>
+		<version updateversion="Y"/>
+		<Product ID="IQ" Text_CN="资质审批" Text_TW="资质审批~" Text_EN="资质审批" Level="5" ComID="EFZZGLToNextYear.EFZZGLToNextYearcls" DynamicParameter="false" SubID="HH" Repeatable="True"/>
+		<netdll>
+			<!-- dll dllfilename="\UAP\Runtime\NewUAPList.dll" tlbfilename="\UAP\Runtime\NewUAPList.tlb"/-->			
+		</netdll>
+		<userconfig>
+			<config configname="\ufcomsql\PUUserConfig.xml" functionname="Save" dll_clsname="EFZZGL_interface.PU_cls"/>
+			<config configname="\ufcomsql\SA_UserConfig.xml" functionname="Save" dll_clsname="EFZZGL_interface.SA_cls"/>
+			<config configname="\ufcomsql\userconfig.xml" functionname="Save" dll_clsname="EFZZGL_interface.ST_cls"/>
+			<!--config configname="\ufcomsql\userconfig.xml" functionname="Verify" dll_clsname="EFZZGL_interface.ST_cls"/-->
+		</userconfig>
+	</other>
+</ProductFacade_Information>

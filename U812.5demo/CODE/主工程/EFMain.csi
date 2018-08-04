@@ -1,0 +1,8 @@
+[History]
+B0=EFMain/frmMain/OnCommand
+B1=EFMain/frmVouchNew/SetPrintShowTemplate
+B2=EFMain/frmVouchNew/ChangeButtonState
+B3=EFMain/frmVouchNew/Form_Load
+B4=EFMain/frmVouchNew/Voucher_bodyCellCheck
+B5=EFMain/clsAutoRefer/CellCheck
+B6=EFMain/mdlU872New/GetVoucherItemValue

@@ -1,0 +1,14 @@
+ModPub = 154, 295, 700, 715, 
+ClsVouchSave = 66, 291, 602, 715, 
+ModVoucher = 66, 296, 1102, 715, 
+clsSystem = 44, 361, 524, 715, 
+Setup_Frm = 110, 310, 575, 715, C, 66, 66, 334, 485, C
+clsCommCheck = 176, 176, 734, 619, C
+clsAutoReferVouch = 66, 66, 599, 513, C
+clsUserInterfaceInit = 35, 128, 469, 711, CZ
+clsReportCallBack = 110, 110, 643, 557, C
+clsAutoColumnSet = 88, 88, 621, 535, C
+clsFilter = 188, 128, 920, 711, C
+clsVouchLoad = 152, 177, 761, 547, 
+clsUsercheck_efyzgl = 588, 159, 1542, 624, C
+UserDefineDll_MOD = 0, 0, 721, 422, 

@@ -1,0 +1,28 @@
+<config>
+<dll>
+<userdll>Interface_demo.Cls_MOD_interface</userdll>
+<function>
+	<userfunction>Before_Save</userfunction>
+	<userfunction>After_Save</userfunction>
+	<userfunction>Before_Verify</userfunction>
+	<userfunction>After_Verify</userfunction>
+	<userfunction>Before_UnVerify</userfunction>
+	<userfunction>After_UnVerify</userfunction>
+	<userfunction>Before_Delete</userfunction>
+	<userfunction>After_Delete</userfunction>
+</function>
+</dll>
+<dll>
+<userdll>Interface_HL.Cls_MOD_interface</userdll>
+<function>
+	<userfunction>Before_Save</userfunction>
+	<userfunction>After_Save</userfunction>
+	<userfunction>Before_Verify</userfunction>
+	<userfunction>After_Verify</userfunction>
+	<userfunction>Before_UnVerify</userfunction>
+	<userfunction>After_UnVerify</userfunction>
+	<userfunction>Before_Delete</userfunction>
+	<userfunction>After_Delete</userfunction>
+</function>
+</dll>
+</config>

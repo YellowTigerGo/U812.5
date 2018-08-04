@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="gb2312"?>
+<pluginmanager>
+	<other>
+		<copyfile>
+		<!--
+			<file sourcefile="NewUAPList.tlb1" desfile="%systemroot%\NewUAPList.tlb123"/>
+			<file sourcefile="adsbc123.txt" desfile="\adsbc123.txt123" /> -->
+		</copyfile>
+		<netdll>
+		<!--
+			<dll dllfilename="\UAP\Runtime\NewUAPList.dll" tlbfilename="\UAP\Runtime\NewUAPList.tlb"/>			
+			<dll dllfilename="\UAP\Runtime\NewFileBoxList.dll" tlbfilename="\UAP\Runtime\NewFileBoxList.tlb"/> -->
+		</netdll>
+	</other>
+</pluginmanager>
